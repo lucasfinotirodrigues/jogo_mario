@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1,h2,ul li{
+    text-align: center;
+    color: yellow;
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 85px;
+    
+}
+h2{
+    font-size: 45px;
+    color: #fff
+}
+ul li{
+    font-size: 20px;
+    margin-top: 20px;
+    list-style: none;
+}
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+
+}
+
+.tube{
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    animation: tube-animation 2.0s infinite linear;
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+}
+.cloud{
+    position: absolute;
+    width: 1150px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+
+.logo{
+    width: 30%;
+    display: flex;    
+    position: relative;    
+    justify-content: center;
+    margin-left: 480px ; 
+}
+.cabecalho{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+    padding-bottom: 165px;
+}
+ 
+@keyframes tube-animation{
+from{
+    right: -85px;
+}
+
+to{
+    right: 100%;
+}
+}
+
+
+@keyframes jump{
+    0% {
+        bottom: 0;
+    }
+    20%{
+        bottom: 115px;
+    }
+
+    40%{
+        bottom: 175px;
+    }
+
+    50%{
+        bottom: 175px;
+    }
+
+    60%{
+        bottom: 175px;
+    }
+
+    80%{
+        bottom: 115px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation{
+    from{
+        right: -550px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 150px) and (max-width: 350px) {
+    .tube{
+        position: absolute;
+        bottom: 0;
+        width: 65px;
+        animation: tube-animation 0.85s infinite linear;
+    }
+    .jump{
+        animation: jump 500ms ease-out;
+    }
+    
+.logo{
+    width: 80%;
+    margin-left: 200px;
+}
+
+.logo{
+    width: 80%;
+    display: flex;    
+    position: relative;    
+    justify-content: center;
+    margin-left: 85px ; 
+}
+.cabecalho{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 315px;
+    width: 100vh;
+}
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+
+}
+ul li{
+font-size: 42px;
+}
+ 
+    
+}
+
+
+
+
+
+@media screen and (max-width: 351px) and (max-width: 460px) {
+    .tube{
+        position: absolute;
+        bottom: 0;
+        width: 65px;
+        animation: tube-animation 0.85s infinite linear;
+    }
+    .jump{
+        animation: jump 500ms ease-out;
+    }
+    
+.logo{
+    width: 80%;
+    margin-right: 50px ; 
+}
+.game-board{
+    width: 100%;}
+    
+
+}
+@media screen and (max-width: 461px) and (max-width: 560px) {
+    .tube{
+        position: absolute;
+        bottom: 0;
+        width: 65px;
+        animation: tube-animation 0.85s infinite linear;
+    }
+    .jump{
+        animation: jump 500ms ease-out;
+    }
+    
+.logo{
+    width: 80%;
+    margin-right: 50px ; 
+}
+.cabecalho{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 8px;
+}
+.game-board{
+    width: 110%;}
+    
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .logo{
+        width: 80%;
+        margin-left: 50px ; 
+    }
+        
+}
+@media screen and (min-width:561px) and (max-width: 768px) {
+    .tube{
+        position: absolute;
+        bottom: 0;
+        width: 65px;
+        animation: tube-animation 0.85s infinite linear;
+    }
+    .jump{
+        animation: jump 500ms ease-out;
+    }
+    
+.logo{
+    width: 80%;
+    margin-left: 200px;
+}
+
+.logo{
+    width: 80%;
+    display: flex;    
+    position: relative;    
+    justify-content: center;
+    margin-left: 85px ; 
+}
+.cabecalho{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 165px;
+}
+ 
+    
+}
